@@ -1,0 +1,44 @@
+/* Card.css */
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff; /* Background color for the card */
+    padding: 20px;
+    border: 1px solid #000000; /* Border for the entire card */
+  }
+  
+  .icon {
+    text-align: center;
+    border: 1px solid #0921f3; /* Initial border size and color */
+    padding: 10px;
+    margin: 10px; /* Adjust spacing between icons */
+    width: 120px; /* Set the width of each icon */
+    height: 120px; /* Set the height of each icon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* To create a relative position for the icon */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for border color and box-shadow */
+  }
+  
+  .icon img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+  }
+  
+  .icon p {
+    margin: 5px 0 0;
+    font-size: 12px;
+  }
+  
+  /* Hover effect */
+  .icon:hover {
+    border-color: transparent; /* Make border color transparent */
+    box-shadow: 0 0 0 2px rgb(105, 240, 15); /* Change box-shadow color to a specific color on hover */
+  }
+  

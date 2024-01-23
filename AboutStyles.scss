@@ -1,0 +1,141 @@
+.about-containers {
+  margin: 4rem 6rem;
+  text-align: start;
+}
+
+.about-containers h1 {
+  padding-bottom: 1rem;
+  background-color: #01959a;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: gradientAnimation 2s linear infinite;
+    background-size: 150% auto; 
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+}
+
+.about-containers p
+{
+  padding-bottom: 2rem;
+}
+
+.imageContainer
+{
+  display: flex;
+}
+
+.leftImage,
+.rightImage {
+  width: 50%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.leftImage
+{
+  background-image: url("https://images.pexels.com/photos/3259625/pexels-photo-3259625.jpeg");
+}
+
+.rightImage {
+  background-image: url("https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.leftImage {
+  background-image: url("https://images.pexels.com/photos/3259625/pexels-photo-3259625.jpeg");
+
+  transition: transform 0.3s ease;
+}
+
+.rightImage {
+  background-image: url("https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  transition: transform 0.3s ease;
+}
+.leftImage:hover {
+  transform: scale(1.1);
+}
+
+.rightImage:hover {
+  transform: scale(1.1);
+}
+
+.rightImager,
+.rightImagers {
+  width: 50%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.rightImager {
+  transition: transform 0.3s ease;
+}
+.rightImagers {
+  transition: transform 0.3s ease;
+}
+.rightImager:hover {
+  transform: scale(1.1);
+}
+
+.rightImagers:hover {
+  transform: scale(1.1);
+}
+
+.io {
+  width: 90%;
+  height: 400px;
+  background-position: center;
+}
+.io {
+  transition: transform 0.3s ease;
+}
+.io:hover {
+  transform: scale(1.1);
+}
+
+.slider-frame {
+  overflow: hidden;
+  height: 500px;
+  width: 1300px;
+  margin-left: 360px;
+  margin-top: 20px;
+}
+
+@keyframes slide_animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2400px);
+  }
+}
+
+.slide-images {
+  width: 3600px;
+  height: 800px;
+  position: relative;
+  animation: slide_animation 33s linear infinite;
+}
+
+.bb {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+ @media screen and (max-width: 850px) {
+  .about-containers {
+    margin: 4rem 2rem;
+  }
+}

@@ -1,0 +1,67 @@
+/* Styles for elements outside of media query */
+/* Media query for screens up to 850px width */
+@media screen and (max-width: 850px) {
+  .destination {
+    margin: 4rem 2rem; /* Adjusted margin for smaller screens */
+  }
+
+  .image img:nth-child(2) {
+    position: absolute; /* Position the second image */
+    top: -10%; /* Offset from the top */
+    right: 0; /* Position to the right of the container */
+  }
+  
+  /* Additional styles for other elements within the media query can be added here */
+}
+
+.destination {
+  margin: 4rem 6rem; /* Margin for destination */
+}
+
+.destination h1 {
+  font-size: 3rem; /* Font size for h1 in destination */
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem; /* Margin top for first-des */
+}
+
+.first-des-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem; /* Margin top for first-des-reverse */
+}
+
+.des-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.des-text h1 {
+  padding-bottom: 1rem; /* Padding bottom for h1 in des-text */
+}
+
+/* Styles for images */
+.image {
+  position: relative;
+  width: 50%; /* Container width */
+  display: flex;
+  justify-content: space-between; /* Spacing between images */
+  z-index: -99; /* Z-index to control the stacking order */
+}
+
+.image img {
+  width: 49%; /* Set width for each image */
+  height: 350px; /* Set height for each image */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 6px; /* Rounded corners for images */
+  box-shadow: 1px 62px -18px rgba(0, 0, 0, 0.19); /* Apply box shadow */
+}
+
+
